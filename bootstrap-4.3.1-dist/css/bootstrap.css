@@ -54,6 +54,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  
 }
 
 body {
@@ -64,10 +65,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
- 
-  background-color: #f7f7f7;
-  
+  background-color: #141f45;
+  scroll-behavior: smooth;
 
 }
 
@@ -76,14 +75,16 @@ body {
   width: 90%;
   height: 140em;
   margin: 0 auto;
-  animation-name: animation1;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  background-image: url(../../img/background.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+  
 }
 
 header {
 
-  background-color: #f7f7f7;
+  background-color: #141f45;
   position: 100%;
   height: 6em;
 
@@ -93,20 +94,18 @@ p {
 
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14pt;
-
+  color: #141f45;
 
 }
 
 .ptitel {
 
-  text-align: center;
-  
   font-size: 57pt;
-  
   font-family: 'Source Sans Pro', sans-serif;
-  animation-name: animation2;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  color: white;
+  width: 100%;
+  margin-top: 0;
+
 
 }
 
@@ -155,28 +154,12 @@ p {
 
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20pt;
+  color: #141f45;
 
 
 }
 
 
-@keyframes animation1 {
-
-0% {background-color: rgb(3, 145, 3);}
-25% {background-color: rgb(6, 124, 6);}
-50% {background-color: rgb(10, 110, 10);}
-75% {background-color: rgb(38, 124, 38);}
-100% {background-color: rgb(3, 145, 3);}
-}
-
-@keyframes animation2 {
-
-  0% {color: rgb(3, 145, 3);}
-  25% {color: rgb(6, 124, 6);}
-  50% {color: rgb(10, 110, 10);}
-  75% {color: rgb(38, 124, 38);}
-  100% {color: rgb(3, 145, 3);}
-  }
 
   
   .bottom {
@@ -198,10 +181,7 @@ p {
     margin-top: 20em;
   }
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
+ 
   dl {
     width: 500px;
    
@@ -297,16 +277,9 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-}
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
+
+
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -4747,7 +4720,7 @@ input[type="button"].btn-block {
   margin-left: 1.25rem;
 }
 
-.card-header {
+.card-header {  
   padding: 0.75rem 1.25rem;
   height: 5.5em;
   margin-bottom: 0;
@@ -10189,17 +10162,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 
-a {
-  color: black;
-  text-decoration: none;
-}
+
 dl {
   width: 100%;
  
 }
 dt {
   background-color: #f7f7f7;
-  color: #444;
+  color: #141f45;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -10232,14 +10202,14 @@ dd {
   border: solid 1px #ddd
 }
 
-a {
+.blue {
 
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
-
-  animation-name: animation2;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  color: rgb(62, 62, 202); 
+ border-style: solid;
+ border-width: 2px;
+ border-color: rgb(62, 62, 202); 
   font-size: 20pt;
 }
 
@@ -10248,10 +10218,18 @@ a {
 
 text-align: center;
 
+
+font-size: 20pt;
+
 }
+
+
+
+
 a.closed:hover {
 
   text-decoration: none;
+
 }
 
 
@@ -10270,12 +10248,239 @@ a.closed:hover {
   padding: 12px;
   width: 3em;
   border-radius: 4px;
-  animation-name: animation1;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  background-color: #1f2d5f;
+  
 
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: rgb(56, 56, 170);
 }
+  
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.nav1 {
+
+  height: 3em;
+  width: 33.3%;
+  background-color: #141f45;
+ 
+
+  
+}
+
+.nav2 {
+
+  height: 3em;
+  width: 33.3%;
+  background-color: #141f45;
+
+
+  
+}
+
+.nav3 {
+
+  height: 3em;
+  width: 33.3%;
+  background-color: #141f45;
+
+
+  
+}
+
+
+
+
+.titeltitel {
+
+  margin: 0 auto;
+  width: 20em;
+}
+
+h4 {
+
+  text-align: center;
+  top: 3em;
+  color: white;
+}
+
+.navigationtotal {
+
+  display: flex;
+  justify-content: space-between;
+  top: 1em;
+}
+
+.sasd {
+
+  margin-top: 2em;
+}
+
+
+
+.parallax { 
+  /* The image used */
+
+  background-image: url("../../img/background.jpg");
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+
+
+  height: 80em; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.parallax2 { 
+  /* The image used */
+
+  background-image: url("../../img/thumb-1920-87577.jpg");
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+
+
+  height: 80em; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax3 { 
+  /* The image used */
+
+  background-image: url("../../img/bild4.jpg");
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+
+
+  height: 80em; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.codepen2 {
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+.codepen3 {
+
+  width: 90%;
+  height: 15em;
+  margin: 0 auto;
+}
+
+.break3 {
+
+  height: 20em;
+}
+
+.break4 {
+
+  height: 10em;
+}
+
+
+a {
+
+
+  text-decoration: none;
+  color: white;
+}
+
+.trennbalken {
+
+  height: 5em;
+  width: 100%;
+  background-color: #141f45;
+}
+
+
+
+#oben {
+  max-width: 1500px;
+  height: 400px;
+  margin: 0 auto;
+}
+#oben img {
+  margin: 0 auto;
+  display: block;
+  max-height: 400px;
+  max-width: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+}
+#unten {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+
+}
+#unten img {
+  height: 100px;
+  transition-duration: 0.6s;
+}
+#unten img:hover {
+  cursor: pointer;
+}
+#unten img:first-child {
+  opacity: 0.3;
+}
+
+.imgborder {
+
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+}
+
+
+
