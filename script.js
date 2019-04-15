@@ -25,14 +25,6 @@ function topFunction() {
 }
 
 
-
-
-
-
-
-
-
-
 //Bildanzeige
 
 $(document).ready(function() {
