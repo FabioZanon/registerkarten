@@ -25,22 +25,22 @@ function topFunction() {
 }
 
 
-//Bildanzeige
+//Bildanzeige 
 
-$(document).ready(function() {
-  $("#unten img").on("click", function() {
-    var src = $(this).attr("src");
-    var alt = $(this).attr("alt");
-        $("#unten img").css("opacity", "1");
-        $(this).css("opacity", "0.3");
-        $("#oben img").fadeOut(400);
-        setTimeout(function(){
-        $("#oben img")
-        .removeAttr("src")
-        .removeAttr("alt")
-        .attr("src", src)
-        .attr("alt", alt)
-        .fadeIn(400);
-}, 400);
+$(document).ready(function() {                    // Wird erst ausgeführt nach dem Laden der Webseite
+  $("#unten img").on("click", function() {        // Wenn man eines der unteren Bilder anklickt passiert folgendes:
+    var src = $(this).attr("src");                // Variable erstellen und hinzufügen für #unten img 
+    var alt = $(this).attr("alt");                // Variable erstellen und hinzufügen für #unten img 
+        $("#unten img").css("opacity", "1");      // Das Bild, welches weggeht, bekommt die Deckkraft 1
+        $(this).css("opacity", "0.3");            // Das Bild, welches gewählt wird, bekommt die Deckkraft 0.3
+        $("#oben img").fadeOut(400);              // Das Bild, welches OBEN Weggeht bekommt einen fadeOut von 400ms
+        setTimeout(function(){                    // Timeout hinzufügen, damit sich der FadeOut und FadeIn nicht überlappen
+        $("#oben img")                            
+        .removeAttr("src")                        // Die Attribute src und alt werden für das Obere Bild entfernt und wieder hinzugefügt
+        .removeAttr("alt")                        // -
+        .attr("src", src)                         // -
+        .attr("alt", alt)                         // -
+        .fadeIn(400);                             // Das Obere Bild bekommt einen fadeIn von 400ms
+}, 400);                                          // Diser ganze Vorgang passiert in 400ms oder .4s
     });
 });

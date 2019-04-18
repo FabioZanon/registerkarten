@@ -10403,6 +10403,42 @@ h4 {
   background-size: cover;
 }
 
+.parallax4 { 
+  /* The image used */
+
+  background-image: url("../../img/background.jpg");
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+
+
+  height: 100em; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 { 
+  /* The image used */
+
+  background-image: url("../../img/bild1.jpg");
+  background-color: rgba(0, 0, 255, 0.425);
+  background-blend-mode: darken;
+
+
+  height: 80em; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .codepen2 {
 
@@ -10484,3 +10520,105 @@ a {
 
 
 
+.textfeld {
+
+  margin: 0 auto;
+  width: 98%;
+  height: 12em;
+  animation-name: animationworkshop;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  border-radius: 20px;
+}
+
+@keyframes animationworkshop {
+
+  0% {background-color: #1c3a8e;}
+  25% {background-color: #2748a3;}
+  50% {background-color: #838aff;}
+  75% {background-color: #2748a3;}
+  100% {background-color: #1c3a8e;}
+
+}
+
+
+
+
+
+
+  
+
+.animation {
+
+  width: 6em;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  animation-name: rotation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes rotation {
+  0% {
+  transform: translateX(0) rotateZ(0)
+  }
+  50% {
+  transform: translateX(75vw) rotateZ(360deg)
+  }
+  100% {
+  transform: translateX(0) rotateZ(0)
+  }
+
+  }
+
+
+  
+
+  .huge {
+
+    margin: 0 auto;
+    width: 20%;
+    height: 3em;
+    animation-name: animationworkshop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+
+  #hoverme {
+
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 14pt;
+    
+
+  }
+
+  .huge:hover {
+    width: 98%;
+    }
+
+
+    footer {
+
+      width: 100%;
+      height: 5em;
+      background-color: #141f45;
+    }
+
+    
+
+    .footertext {
+
+      color: white;
+      text-align: center;
+      margin-top: 4em;
+    }
